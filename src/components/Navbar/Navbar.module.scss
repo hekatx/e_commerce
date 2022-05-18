@@ -1,0 +1,22 @@
+@mixin flex-space-center {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav--container {
+  @include flex-space-center;
+  padding: 0.5rem;
+  margin: 1rem;
+  border: 1px solid black;
+}
+
+.logo {
+  width: 5%;
+}
+
+.nav--list {
+  @include flex-space-center;
+  width: 100%;
+  list-style: none;
+}
